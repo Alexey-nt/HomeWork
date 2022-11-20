@@ -5,6 +5,7 @@
 782 -> 8
 918 -> 1
 */
+
 /*
 int SecondDigit(int num)
 {
@@ -35,20 +36,23 @@ Console.Write($"Вторая цифра вашего числа {num2}");
 32679 -> 6
 */
 
+/*
 int ThirdDigit(int num)
 {
     if (num > 99)
     {
         int num1 = num / 100;
-        int num2 = num1 % 100000;
-        return num2;
+        return num1;
     }
     else Console.WriteLine("Третьей цифры нет.");
 }
 
 Console.WriteLine("Введите ваше число: ");
 int user_num = Convert.ToInt32(Console.ReadLine());
-
+while (user_num > 999)
+{
+    user_num = user_num / 10;
+}
 int num_1 = ThirdDigit(user_num);
 Console.Write($"Третья цифра вашего числа {num_1}");
 
