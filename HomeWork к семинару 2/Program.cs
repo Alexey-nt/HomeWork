@@ -41,10 +41,11 @@ int ThirdDigit(int num)
 {
     if (num > 99)
     {
-        int num1 = num / 100;
+        int num1 = num % 10;
         return num1;
     }
     else Console.WriteLine("Третьей цифры нет.");
+    return num;
 }
 
 Console.WriteLine("Введите ваше число: ");
@@ -55,6 +56,7 @@ while (user_num > 999)
 }
 int num_1 = ThirdDigit(user_num);
 Console.Write($"Третья цифра вашего числа {num_1}");
+*/
 
 /*
 Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
@@ -62,4 +64,25 @@ Console.Write($"Третья цифра вашего числа {num_1}");
 6 -> да
 7 -> да
 1 -> нет
+*/
+
+/*
+void DenNedeli(int num)
+{
+    if (num >= 1 && num <=5)
+    {
+        Console.WriteLine("Этот день недели не является выходным.");
+    }
+    if (num > 7)
+    {
+    Console.WriteLine("Ваша цифра не соответствует ни одному дню недели.");
+    }
+    else Console.WriteLine("Этот день недели является выходным.");
+}
+
+
+Console.WriteLine("Введите цифру дня недели: ");
+int user_num = Convert.ToInt32(Console.ReadLine());
+
+DenNedeli(user_num);
 */
