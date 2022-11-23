@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "HomaWork к семинару 3/1.0.0": {
+        "runtime": {
+          "HomaWork к семинару 3.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HomaWork к семинару 3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
