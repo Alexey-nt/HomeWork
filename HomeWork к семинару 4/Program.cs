@@ -31,7 +31,7 @@ Console.WriteLine($"Ваше число {user_num1} в степени {user_num2
 // 82 -> 10
 // 9012 -> 12
 
-
+/*
 int CountOfDigits(int number)
 {
     int current = 1;
@@ -60,6 +60,7 @@ while (count <= count_digit)
 }
 
 Console.WriteLine($"Сумма цифр в числе {user_num} равна {sum}");
+*/
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 
