@@ -1,0 +1,5 @@
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 5\obj\Debug\net6.0\HomeWork к семинару 5.csproj.AssemblyReference.cache
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 5\obj\Debug\net6.0\HomeWork к семинару 5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 5\obj\Debug\net6.0\HomeWork к семинару 5.AssemblyInfoInputs.cache
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 5\obj\Debug\net6.0\HomeWork к семинару 5.AssemblyInfo.cs
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 5\obj\Debug\net6.0\HomeWork к семинару 5.csproj.CoreCompileInputs.cache
