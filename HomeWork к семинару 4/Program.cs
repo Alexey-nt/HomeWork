@@ -55,8 +55,8 @@ int current = user_num;
 while (count <= count_digit)
 {
     sum = (current % 10) + sum;
-    current = user_num / 10;
-    count += 1;
+    current = current / 10;
+    count ++;
 }
 
 Console.WriteLine($"Сумма цифр в числе {user_num} равна {sum}");
