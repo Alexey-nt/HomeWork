@@ -91,7 +91,7 @@ Console.WriteLine($"Сумма элементов, стоящих на нечё�
 // не могу. Основная ошибка в том, что не возможно преобразовать double в double[].
 
 /*
-double RandomArray(int size, int minValue, int maxValue)
+double [] RandomArray(int size, int minValue, int maxValue)
 {
     
     int [] newArray = new int[size];
@@ -103,11 +103,20 @@ double RandomArray(int size, int minValue, int maxValue)
         newArray[i] = new Random().Next(minValue, maxValue + 1);
         newDoubleArray[i] = new Random().NextDouble();
         newCreatedArray[i] = newArray[i] + newDoubleArray[i];
+        Math.Round(newCreatedArray[i], 2);
     }
-    return newCreatedArray[i];
+    return newCreatedArray;
 }
 
-double MaxNumber(double[] array)
+void ShowNewArray(double [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write (array[i] + " ");
+    }
+}
+
+double  MaxNumber(double[] array)
 {
     double maxNumber = array[0];
     for (int i = 0; i < array.Length; i++)
@@ -127,11 +136,11 @@ double MinNumber(double[] array)
     return minNumber;
 }
 
-int size_array = 10;
+int size_array = 5;
 int minValue_array = 0;
 int maxValue_array = 10;
-double randomArray = RandomArray(size_array, minValue_array, maxValue_array);
-Console.WriteLine($"{Math.Round(randomArray, 2)}");
+double [] randomArray = RandomArray(size_array, minValue_array, maxValue_array);
+ShowNewArray(randomArray);
 
 double max_num = MaxNumber(randomArray);
 double min_num = MinNumber(randomArray);
