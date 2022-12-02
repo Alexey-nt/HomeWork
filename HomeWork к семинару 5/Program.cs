@@ -90,7 +90,7 @@ Console.WriteLine($"Сумма элементов, стоящих на нечё�
 // коментарий для преподавателя: в голове всё работает, а в коде реализовать не могу. Пробовал менять по-разному, но от ошибок избавиться
 // не могу. Основная ошибка в том, что не возможно преобразовать double в double[].
 
-/*
+
 double [] RandomArray(int size, int minValue, int maxValue)
 {
     
@@ -103,7 +103,7 @@ double [] RandomArray(int size, int minValue, int maxValue)
         newArray[i] = new Random().Next(minValue, maxValue + 1);
         newDoubleArray[i] = new Random().NextDouble();
         newCreatedArray[i] = newArray[i] + newDoubleArray[i];
-        Math.Round(newCreatedArray[i], 2);
+        newCreatedArray[i] = Math.Round(newCreatedArray[i], 2);
     }
     return newCreatedArray;
 }
@@ -145,5 +145,6 @@ ShowNewArray(randomArray);
 double max_num = MaxNumber(randomArray);
 double min_num = MinNumber(randomArray);
 double result = max_num - min_num;
-Console.WriteLine($"Разница между макс и мин элементами равна {result}");
-*/
+result = Math.Round(result, 2);
+Console.WriteLine($"Разница между макс и мин {(max_num, min_num)} элементами равна {result}");
+
