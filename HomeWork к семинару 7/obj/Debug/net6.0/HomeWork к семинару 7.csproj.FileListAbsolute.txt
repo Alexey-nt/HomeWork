@@ -1,0 +1,15 @@
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\HomeWork к семинару 7.csproj.AssemblyReference.cache
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\HomeWork к семинару 7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\HomeWork к семинару 7.AssemblyInfoInputs.cache
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\HomeWork к семинару 7.AssemblyInfo.cs
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\HomeWork к семинару 7.csproj.CoreCompileInputs.cache
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\bin\Debug\net6.0\HomeWork к семинару 7.exe
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\bin\Debug\net6.0\HomeWork к семинару 7.deps.json
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\bin\Debug\net6.0\HomeWork к семинару 7.runtimeconfig.json
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\bin\Debug\net6.0\HomeWork к семинару 7.dll
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\bin\Debug\net6.0\HomeWork к семинару 7.pdb
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\HomeWork к семинару 7.dll
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\refint\HomeWork к семинару 7.dll
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\HomeWork к семинару 7.pdb
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\HomeWork к семинару 7.genruntimeconfig.cache
+C:\Users\alexe\OneDrive\Документы\Семинар С#\DZ C#\HomeWork к семинару 7\obj\Debug\net6.0\ref\HomeWork к семинару 7.dll
