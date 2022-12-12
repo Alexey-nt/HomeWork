@@ -32,23 +32,29 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
 }
 
-int[,] FromMaxToMin(int[,] array)
+void FromMaxToMin(int[,] array)
 {
-    int maxNumber = array[i, j];
-    for (int i = 0; i < array.GetLength(0); i++)
+   for (int i = 0; i < array.GetLength(0); i++)
     {
-
-        if (array[i, j] > maxNumber)
-            Console.Write(array[i, j] + " ");
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int k = 0; k < array.GetLength(1) - 1; k++)
+            {
+                if (array[i, k] < array[i, k + 1])
+                {
+                    int temp = array[i, k + 1];
+                    array[i, k + 1] = array[i, k];
+                    array[i, k] = temp;
+                }
+            }
+        }
     }
-    for (int j = 0; j < array.GetLength(1); j++)
-        return array;
 }
-
 
 int[,] newArray = Create2dArray(5, 5, 0, 9);
 Show2dArray(newArray);
 FromMaxToMin(newArray);
+Show2dArray(newArray);
 */
 
 //  Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.
@@ -61,6 +67,7 @@ FromMaxToMin(newArray);
 //  
 //  Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
 
+/*
 int[,] Create2dArray(int row, int column, int minVal, int maxVal)
 {
     int[,] created2dArray = new int[row, column];
@@ -84,29 +91,55 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
 }
 
-void SumElements(int[,] array)
+int[] SumElements(int[,] array)
 {
+    int[] sumElements = new int[array.GetLength(0)];
+    int sum = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
-        int sum = 0;
-        int minSum = 0;
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            sum = sum + array[i, j];
-            if (sum <= minSum)
-            {
-                
-            }
-
+            sum += array[i, j];
+            sumElements[i] = sum;
         }
-        Console.Write(sum2 + " ");
+        sum = 0;
     }
+    return sumElements;
+}
+
+void PrintArray(int[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
+    }
+}
+
+int RowMinResult(int[] array)
+{
+    int resultSum = array[0];
+    int row = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] < resultSum)
+        {
+            resultSum = array[i];
+            row = i;
+        }
+    }
+    return (row);
 }
 
 int[,] newArray = Create2dArray(5, 4, 0, 9);
 Show2dArray(newArray);
-SumElements(newArray);
-
+Console.WriteLine();
+int[] sum = SumElements(newArray);
+PrintArray(sum);
+Console.WriteLine();
+int minSum = RowMinResult(sum);
+Console.WriteLine($"Строка с наименьшей суммой: {minSum + 1}");
+*/
 
 //  Задача 58(дополнительно): Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 //  Например, даны 2 матрицы:
@@ -127,8 +160,38 @@ SumElements(newArray);
 //  27(0,0,1) 90(0,1,1)
 //  26(1,0,1) 55(1,1,1)
 
+/*
+int[,,] Create3dArray(int row, int column, int column2, int minVal, int maxVal)
+{
+    int[,,] created3dArray = new int[row, column, column2];
 
+    for (int i = 0; i < row; i++)
+        for (int j = 0; j < column; j++)
+            for (int k = 0; k < column2; k++)
+            {
+                created3dArray[i, j, k] = new Random().Next(minVal, maxVal + 1);
 
+            }
+    return created3dArray;
+}
+
+void Show3dArray(int[,,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            for (int k = 0; k < array.GetLength(2); k++)
+                Console.Write($"{array[i, j, k]} ({i},{j},{k}) ");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+int[,,] newArray = Create3dArray(2, 2, 2, 0, 9);
+Show3dArray(newArray);
+*/
 
 //  Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
 //  Например, на выходе получается вот такой массив:
@@ -136,3 +199,43 @@ SumElements(newArray);
 //  12 13 14 05
 //  11 16 15 06
 //  10 09 08 07
+
+/*
+int n = 4;
+int[,] array = new int[n, n];
+
+int temp = 1;
+int i = 0;
+int j = 0;
+
+while (temp <= array.Length)
+{
+  array[i, j] = temp;
+  temp++;
+  if (i <= j + 1 && i + j < array.GetLength(1) - 1)
+    j++;
+  else if (i < j && i + j >= array.GetLength(0) - 1)
+    i++;
+  else if (i >= j && i + j > array.GetLength(1) - 1)
+    j--;
+  else
+    i--;
+}
+
+void ShowSpiralArray(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
+    {
+      if (array[i,j] / 10 <= 0)
+      Console.Write($"0{array[i,j]} ");
+
+      else Console.Write($"{array[i,j]} ");
+    }
+    Console.WriteLine();
+  }
+}
+
+ShowSpiralArray(array);
+*/
